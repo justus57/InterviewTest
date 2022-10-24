@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+<table >
+    
+    <thead>Product</thead>
+    <thead>Description</thead>
+    <thead>Quatity</thead>
+    <thead>Delievered</thead>
+    <thead>Invoiced</thead>
+    <thead>UOM</thead>
+    <thead>UnitPrice</thead>
+    <thead>Taxes</thead>
+    <thead>SubTotal</thead>
+    <tr>
+        foreach(var item in datalist){
+        <td>item</td>
+        }
+     
+    </tr>
+</table>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
